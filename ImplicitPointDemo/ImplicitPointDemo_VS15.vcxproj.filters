@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{06dcf987-d5c3-489b-aa0a-88d547a323d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\ForwardRenderingPass">
+      <UniqueIdentifier>{6bfc407b-0c62-4f0f-affe-886171557c91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\GBufferPass">
+      <UniqueIdentifier>{909dd65a-12c9-4ade-b3db-76dc274edd1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\SampleGenerationPass">
+      <UniqueIdentifier>{57fbe1d1-47be-410d-b7f8-f35cb45dac6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\SampleVisualizationPass">
+      <UniqueIdentifier>{8b1604a0-ea81-4405-b270-811b2660753d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Shared">
+      <UniqueIdentifier>{ee594752-22b7-475a-957a-ce1416997aa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\RaytracingAOPass">
+      <UniqueIdentifier>{2f8c4433-e9a6-474e-8b59-3262470814cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\AccumulationPass">
+      <UniqueIdentifier>{d64fd86d-cd57-42b1-bebe-c3c2fe832162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\WorldHashTablePass">
+      <UniqueIdentifier>{3fcd8cf1-4d3d-4f85-9622-b1123d274b68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\FinalVisualizationPass">
+      <UniqueIdentifier>{aa6bb779-6c87-429f-ba23-675cdba6863e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Logo44.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SmallLogo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SplashScreen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="StoreLogo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WideLogo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shaders\SampleGenerationPS.hlsl">
+      <Filter>Shaders\SampleGenerationPass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\SampleGenerationVS.hlsl">
+      <Filter>Shaders\SampleGenerationPass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GBufferVS.hlsl">
+      <Filter>Shaders\GBufferPass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\GBufferPS.hlsl">
+      <Filter>Shaders\GBufferPass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\ForwardPS.hlsl">
+      <Filter>Shaders\ForwardRenderingPass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\ForwardVS.hlsl">
+      <Filter>Shaders\ForwardRenderingPass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\SampleVisualizationGS.hlsl">
+      <Filter>Shaders\SampleVisualizationPass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\SampleVisualizationPS.hlsl">
+      <Filter>Shaders\SampleVisualizationPass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\SampleVisualizationVS.hlsl">
+      <Filter>Shaders\SampleVisualizationPass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\Hit.hlsl">
+      <Filter>Shaders\RaytracingAOPass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\Miss.hlsl">
+      <Filter>Shaders\RaytracingAOPass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\RayGeneration.hlsl">
+      <Filter>Shaders\RaytracingAOPass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\AccumulationPass.hlsl">
+      <Filter>Shaders\AccumulationPass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\WorldHashTable.hlsl">
+      <Filter>Shaders\WorldHashTablePass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\FinalVisualizationPass.hlsl">
+      <Filter>Shaders\FinalVisualizationPass</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\ClearBuffersPass.hlsl">
+      <Filter>Shaders\AccumulationPass</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\HashFunctions.hlsli">
+      <Filter>Shaders\Shared</Filter>
+    </None>
+    <None Include="Shaders\SharedData.hlsli">
+      <Filter>Shaders\Shared</Filter>
+    </None>
+    <None Include="Shaders\RayTracingData.hlsli">
+      <Filter>Shaders\RaytracingAOPass</Filter>
+    </None>
+    <None Include="Shaders\RayTracingUtils.hlsli">
+      <Filter>Shaders\RaytracingAOPass</Filter>
+    </None>
+    <None Include="Shaders\HashTable.hlsli">
+      <Filter>Shaders\Shared</Filter>
+    </None>
+    <None Include="Shaders\SharedUtilities.hlsli">
+      <Filter>Shaders\Shared</Filter>
+    </None>
+    <None Include="Shaders\SampleGenerationFunctions.hlsli">
+      <Filter>Shaders\SampleGenerationPass</Filter>
+    </None>
+    <None Include="Shaders\LODFunctions.hlsli">
+      <Filter>Shaders\Shared</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DescriptorHeapStack.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderHelpers.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTracingDispatchRayInputs.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AccelerationStructureBuffer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
