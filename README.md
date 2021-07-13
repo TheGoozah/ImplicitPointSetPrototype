@@ -1,1 +1,3 @@
-# ImplicitPointSetPrototype
+# Caching Shading Information in World Space using Implicit Progressive Low Discrepancy Point Sets
+This is the supplementary material for the publication "Caching Shading Information in World Space using Implicit Progressive Low Discrepancy Point Sets". The publication can be acquired via the following link: http://matthieudelaere.com/project_caching.html
+The prototype, which was built using Microsoft's MiniEngine framework (https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/MiniEngine), **requires** a GPU which **supports hardware accelerated raytracing** as it relies on **DXR**. 
